@@ -14,7 +14,6 @@ const FetchBtc3 = () => {
         setApi(number)
     }
 
-   
   useEffect(()=>{
         setInterval(fetchBtcApi, 1000 )   
 
@@ -30,5 +29,3 @@ const FetchBtc3 = () => {
     export default FetchBtc3
 
     
-    // video tutorial call api
-    // https://www.youtube.com/watch?v=kZ4YaoCYais&ab_channel=PabloLizardo
