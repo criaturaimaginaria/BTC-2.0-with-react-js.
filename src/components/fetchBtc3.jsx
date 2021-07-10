@@ -11,7 +11,7 @@ const FetchBtc3 = () => {
         const response = await fetch(BtcUrl)
         const data = await response.json()
         const number = (JSON.parse(data.bpi.USD.rate_float))    
-        console.log(data)
+      
         setApi(number)
     }
 
@@ -23,8 +23,8 @@ const FetchBtc3 = () => {
     
         return (
             <div >
-                    <h1> { api == 0  ?  <img src={gif} className="gif"/> : Math.trunc(api)  }  </h1>       
-                   
+                    <h1> { api === 0  ?  <img src={gif} className="gif"/> : Math.trunc(api)  }  </h1>       
+                    
             </div>
         )
     }
