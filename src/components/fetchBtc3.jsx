@@ -11,11 +11,13 @@ const FetchBtc3 = () => {
         const response = await fetch(BtcUrl)
         const data = await response.json()
         const number = (JSON.parse(data.bpi.USD.rate_float))    
+        console.log(data)
         setApi(number)
     }
 
   useEffect(()=>{
-        setInterval(fetchBtcApi, 1000 )   
+        // setInterval(fetchBtcApi, 1000 )   
+        fetchBtcApi()
 
     }, )
     
