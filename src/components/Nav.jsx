@@ -1,17 +1,30 @@
-import React from 'react'
+import React from 'react';
+import logo from '../logo.png';
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
-    return (
-       
-        
+
+
+    return (  
         <nav>
-            <h3>logo</h3>
-            <ul>
-                <li>Main</li>
-                <li>bitcoin</li>
-                <li>ethereum</li>
-                <li>otras monedas</li>
+             <img src={logo} className="logo" />
+            
+            <ul className="nav-links">
+                <Link to='/components/Main'>
+                    <li>Main</li>
+                </Link>    
+                <Link to='/components/BTCmarket'>
+                    <li>Bitcoin</li>
+                </Link> 
+                <Link to='/components/Ethereum'>
+                    <li>Ethereum</li>
+                </Link> 
+                <Link to='/components/OtherCurrency'>
+                    <li>Other Currency</li>
+                </Link> 
+                
             </ul>
+            
         </nav>
     )
 }

@@ -23,9 +23,8 @@ const BTCmarket = () => {
     
         return (
             <div >
-                <button onClick={marketapi}>Get Bitcoin price...</button>
-                  
-                   <h1> hola {api}</h1>
+
+                   <h1> Bitcoin {api}</h1>
             </div>
         )
     }
