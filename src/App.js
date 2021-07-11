@@ -7,6 +7,7 @@ import Main from './components/Main';
 import Nav from './components/Nav';
 import OtherCurrency from './components/OtherCurrency'; 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Footer from './components/Footer';
 
 
  
@@ -15,14 +16,17 @@ function App() {
 
     <Router>
         <div className="App">
-          <Nav />
-            <Switch>
-              <Route path="/" exact component={Main} />
-              <Route path="/components/Main"  component={Main} />
-              <Route path="/components/BTCmarket"  component={BTCmarket} />
-              <Route path="/components/Ethereum"  component={Ethereum} />
-              <Route path="/components/OtherCurrency"  component={OtherCurrency} />
-            </Switch>
+          <Nav />    
+              
+              <Switch >
+                <Route path="/" exact component={Main} />
+                <Route path="/components/Main"  component={Main} />
+                <Route path="/components/BTCmarket"  component={BTCmarket} />
+                <Route path="/components/Ethereum"  component={Ethereum} />
+                <Route path="/components/OtherCurrency"  component={OtherCurrency} />
+              </Switch>     
+
+          <Footer />
 
           {/* <FetchBtc3 /> */}
           {/* <FetchBtc /> */}

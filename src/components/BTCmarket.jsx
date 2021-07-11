@@ -22,7 +22,7 @@ const BTCmarket = () => {
     }, )
     
         return (
-            <div >
+            <div>
 
                    <h1> Bitcoin {api}</h1>
             </div>

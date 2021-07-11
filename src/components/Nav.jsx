@@ -6,6 +6,7 @@ const Nav = () => {
 
 
     return (  
+        
         <nav>
              <img src={logo} className="logo" />
             
