@@ -8,7 +8,7 @@ const Nav = () => {
     return (  
         
         <nav>
-             <img src={logo} className="logo" />
+             <img src={logo} alt="btc nav" className="logo" />
             
             <ul className="nav-links">
                 <Link to='/components/Main'>

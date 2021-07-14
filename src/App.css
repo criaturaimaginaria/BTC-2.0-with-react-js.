@@ -6,28 +6,40 @@
 }
 
 
-
 body{
+  position: relative;
+  min-height: 100vh;
   font-family: 'Times New Roman';
   background-image: url(background.jpg);
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  
 }
 
 .App{
   text-align: center;
-  flex-grow: 1;
 }
 
+.main{
+  margin-top: 8vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-bottom: 25vh;
+}
+
+.bitcoin{
+  margin-top: 11vh ;
+  padding-bottom: 29vh;
+}
+
+.ETH{
+  margin-top: 11vh ;
+  padding-bottom: 29vh;
+}
+
+.currencies{
+  margin-top: 11vh ;
+  padding-bottom: 29vh;
+}
   
-/* .gif{
-  
-  height: 0.9em;
-  width: 1em;
-  align-items: center;
-} */
 
 nav{
   font-size: 1.40em;
@@ -35,6 +47,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
+  min-width: 100vw;
   background: rgb(255, 136, 0);
   color: white;
   text-decoration: none;
@@ -63,17 +76,46 @@ nav{
 }
 
 
+form [type=text]{
+  font-size: 1em;
+  width: 20vh;
+  height: 3vw;
+  padding: 12px 20px;
+ margin: 1em;
+  box-sizing: border-box;
+}
+
+form [type="button"]{
+  font-size: 1.3em;
+  background-color: rgb(161, 152, 107);
+  width: 20vh;
+  height: 3vw;
+  border-radius: 5px;
+}
+form [type="button"]:hover{
+  background-color: rgb(255, 248, 211);
+  width: 20vh;
+  height: 3vw;
+  border-radius: 5px;
+}
+
+
+
+
 footer{
-  
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   min-height: 18vh;
 
   font-size: 1.40em;
   display:flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 18vh;
-  background: rgb(24, 24, 24);
+
+  background: rgb(42, 42, 42);
   color: white;
-  opacity: 0.6 ;
+  opacity: 0.8 ;
 
 }
 

@@ -18,7 +18,7 @@ function App() {
         <div className="App">
           <Nav />    
               
-              <Switch >
+              <Switch  className="swit">
                 <Route path="/" exact component={Main} />
                 <Route path="/components/Main"  component={Main} />
                 <Route path="/components/BTCmarket"  component={BTCmarket} />
