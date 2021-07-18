@@ -38,18 +38,18 @@ const Ethereum = () => {
             <form>   
                 <input type="text" name="satoshi" placeholder="ETH"/>
 
-                <input class="btcusd" type="text" name="dollar2" placeholder="USD"/>
+                <input  type="text" name="dollar2" placeholder="USD"/>
 
-                <input type="button" value="convert" onclick="calcular2()"/>
+                <input type="button" value="convert" />
             </form> 
 
             <h2>USD to ETH </h2>
             <form>   
                 <input type="text" name="satoshi" placeholder="USD"/>
 
-                <input class="btcusd" type="text" name="dollar2" placeholder="ETH"/>
+                <input  type="text" name="dollar2" placeholder="ETH"/>
 
-                <input type="button" value="convert" onclick="calcular2()"/>
+                <input type="button" value="convert" />
             </form> 
 
         </div>

@@ -45,18 +45,18 @@ const BTCmarket = () => {
             <form >   
                 <input type="text" name="satoshi" placeholder="BTC"/>
 
-                <input class="btcusd" type="text" name="dollar2" placeholder="USD"/>
+                <input  type="text" name="dollar2" placeholder="USD"/>
 
-                <input type="button" value="convert" onclick="calcular2()"/>
+                <input type="button" value="convert"/>
             </form> 
 
             <h2>USD to BTC </h2>
             <form>   
                 <input type="text" name="satoshi" placeholder="USD"/>
 
-                <input class="btcusd" type="text" name="dollar2" placeholder="BTC"/>
+                <input  type="text" name="dollar2" placeholder="BTC"/>
 
-                <input type="button" value="convert" onclick="calcular2()"/>
+                <input type="button" value="convert" />
             </form> 
 
 
