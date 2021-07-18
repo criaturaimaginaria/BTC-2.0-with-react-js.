@@ -23,8 +23,8 @@ const OtherCurrency = () => {
     },[] )
 // ------------------------------------------------------------------------
     
-        const [currencyOptions, setcurrencyOptions] = useState ()
-        const [amount, setToAmount] = useState ()
+        const [currencyOptions, setcurrencyOptions] = useState ([])
+      
                 
         useEffect(()=>{
             fetch(cryptoUrl)
@@ -35,6 +35,8 @@ const OtherCurrency = () => {
                 )
 
         }, [])
+
+     
 
     return (
 
