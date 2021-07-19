@@ -24,20 +24,62 @@ const OtherCurrency = () => {
 // ------------------------------------------------------------------------
     
         const [currencyOptions, setcurrencyOptions] = useState ([])
-      
+        const [fromCurrency, setFromCurrency] = useState ()
+        const [toCurrency, setToCurrency] = useState ()
+        const [exchangeRate, setExchangeRate] = useState()
+        const [amount, setAmount] = useState (1)
+        const [amountInFromCurrency, setAmountInFromCurrency ] = useState (true)
+        
+
+        let toAmount, fromAmount
+        if (amountInFromCurrency) {
+            fromAmount = amount
+            toAmount = amount * exchangeRate
+        } else{
+            toAmount = amount
+            fromAmount = amount / exchangeRate
+        }    
+
+    
+        const currencyApi = async () =>{
+            const response = await fetch(cryptoUrl)
+            const data = await response.json() 
+            
+            setcurrencyOptions([ data.map((name)=>name.symbol), data.map((price)=>price.current_price)])
+            setFromCurrency(data[0])
+            setToCurrency(data[2])
+            setExchangeRate(data[0].current_price)
+        //    console.log(data[2].current_price)
+        }
+        
+
                 
         useEffect(()=>{
-            fetch(cryptoUrl)
-                .then(response => response.json())
-                .then(data => 
-                    
-                    setcurrencyOptions([ data.map((name)=>name.symbol), data.map((price)=>price.current_price)])
-                )
-
+            currencyApi()
+           
         }, [])
 
-     
 
+        // useEffect(()=>{
+        //     // const newCryptoUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&"
+        //     if (fromCurrency !=null && toCurrency != null) {
+        //         fetch(`${cryptoUrl}`)
+        //         .then(res => res.json())
+        //         .then(data => setExchangeRate(data.rates[toCurrency]))
+        //     }
+           
+
+        // }, [fromCurrency, toCurrency])
+
+     function handleFromAmountChange(e){
+        setAmount(e.target.value)
+        setAmountInFromCurrency(true)
+     }
+     function handleToAmountChange(e){
+        setAmount(e.target.value)
+        setAmountInFromCurrency(false)
+     }
+     
     return (
 
    
@@ -53,10 +95,23 @@ const OtherCurrency = () => {
                
             </select>
             
-                <CurrencyRow currencyOptions={currencyOptions} />
+                <CurrencyRow 
+                currencyOptions={currencyOptions} 
+                selectCurrency={fromCurrency} 
+                onChangeCurrency={e => setFromCurrency(e.target.value)}
+                onChangeAmount={handleFromAmountChange}
+                amount={fromAmount}
+                />
                 
                 <div>=</div>
-                <CurrencyRow  currencyOptions={currencyOptions}  />
+                <CurrencyRow  
+                currencyOptions={currencyOptions}  
+                selectedCurrency={toCurrency} 
+                onChangeCurrency={e => setToCurrency(e.target.value)}
+                onChangeAmount={handleToAmountChange}
+                amount={toAmount}
+                />
+
 
             </div>
               
