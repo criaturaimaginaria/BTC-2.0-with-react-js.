@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
-import BtcCurrencyRow from './BtcCurrencyRow'
-
+import CurrencyRow from './CurrencyRow'
+import './BTCmarket.css'
 const BTCmarket = () => {
     const apuUrl  = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
    
@@ -93,7 +93,7 @@ const BTCmarket = () => {
 
                
             
-                   <BtcCurrencyRow 
+                   <CurrencyRow 
 
                 onChangeAmount={handleFromAmountChange}
                 amount={fromAmount}
@@ -101,7 +101,7 @@ const BTCmarket = () => {
                 
                 <div>=</div>
                 
-                <BtcCurrencyRow  
+                <CurrencyRow  
     
                 onChangeAmount={handleToAmountChange}
                 amount={toAmount}

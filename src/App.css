@@ -14,77 +14,8 @@ body{
   
 }
 
-.App{
-  text-align: center;
-}
 
-.main{
-  margin-top: 8vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-bottom: 25vh;
-}
-
-.bitcoin{
-  margin-top: 11vh ;
-  padding-bottom: 29vh;
-}
-
-.btc-logo{
-  width: 8em;
-}
-
-.eth-logo{
-  width: 8em;
-}
-
-.ETH{
-  margin-top: 11vh ;
-  padding-bottom: 29vh;
-}
-
-.currencies{
-  margin-top: 11vh ;
-  padding-bottom: 29vh;
-}
-  
-
-nav{
-  font-size: 1.40em;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  min-width: 100vw;
-  background: rgb(255, 136, 0);
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links li{
-  color: rgb(230, 230, 230);
-}
-
-
-.nav-links{
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-
-
-.nav-links :hover{
-  color:rgb(0, 157, 230);
-}
-
-.logo{
-  max-height: 2em;
-}
-
-
-form [type=text]{
+/* form [type=text]{
   font-size: 1em;
   width: 20vh;
   height: 3vw;
@@ -106,24 +37,7 @@ form [type="button"]:hover{
   height: 3vw;
   border-radius: 5px;
 }
+ */
 
 
-
-
-footer{
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   min-height: 18vh;
-
-  font-size: 1.40em;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-
-  background: rgb(42, 42, 42);
-  color: white;
-  opacity: 0.8 ;
-
-}
 

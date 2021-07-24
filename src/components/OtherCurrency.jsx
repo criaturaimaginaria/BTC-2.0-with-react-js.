@@ -1,5 +1,5 @@
 import React,  {useState, useEffect} from 'react'
-import  CurrencyRow  from './CurrencyRow'
+import './OtherCurrency.css'
 
 
 
@@ -22,81 +22,40 @@ const OtherCurrency = () => {
         marketapi()
     },[] )
 // ------------------------------------------------------------------------
-    
-     
-        const [exchangeRate, setExchangeRate] = useState()
-        const [amount, setAmount] = useState (1)
-        const [amountInFromCurrency, setAmountInFromCurrency ] = useState (true)
 
-        
-        
-
-        let toAmount, fromAmount
-        if (amountInFromCurrency) {
-            fromAmount = amount
-            toAmount = amount * exchangeRate
-        } else{
-            toAmount = amount
-            fromAmount = amount / exchangeRate
-        }    
-
-    
-        const currencyApi = async () =>{
-            const response = await fetch(cryptoUrl)
-            const data = await response.json() 
-
-            setExchangeRate(data[0].current_price)
-            // console.log(data.map((price)=> price.current_price))
-            // console.log(data.map((price)=> price.symbol))
-        }
-        
-
-                
-        useEffect(()=>{
-            currencyApi()
-           
-        }, [])
-
-      
-
-
-
-     function handleFromAmountChange(e){
-        setAmount(e.target.value)
-        setAmountInFromCurrency(true)
-     }
-     function handleToAmountChange(e){
-        setAmount(e.target.value)
-        setAmountInFromCurrency(false)
-     }
-     
     return (
 
    
         <div className="currencies">
             <h1>other currencies</h1>
 
-            <select name="currencies" >
-                {api.map(element=>(
-                    <option key={element.id} value={element.current_price}  > {element.name}</option>
-                ))
-                }    
-            </select>
-            
+                <table className="table">
+                    <thead>
+                        <tr>
+                        <th>nombres</th>
+                        <th>precios</th>
+                        </tr>
+                     
+                    </thead>
 
-                <CurrencyRow 
-                onChangeAmount={handleFromAmountChange} //x
-                amount={fromAmount}
-                />
-                
-                <div>=</div>
-                
-                <CurrencyRow  
-                onChangeAmount={handleToAmountChange} //x
-                amount={toAmount}
-                />
+                <tbody>
+                     <tr >
+                    {api.map(element=>(   <td key={element.id} > {element.name}</td>  )) }
+                    </tr>
 
-                 
+                    <tr >
+                    {api.map(element=>(   <td key={element.id} > {element.current_price}</td>  )) }
+                    </tr>
+                
+                </tbody>
+                    
+
+                </table>   
+                   
+                
+                   
+               
+   
 
             </div>
 

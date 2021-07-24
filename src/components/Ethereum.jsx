@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import BtcCurrencyRow from './BtcCurrencyRow'
+import CurrencyRow from './CurrencyRow'
+import  './Ethereum.css'
 
 
 const Ethereum = () => {
@@ -89,7 +90,7 @@ const Ethereum = () => {
             <img src={img}  alt="ETH" className="eth-logo"/>
 
 
-            <BtcCurrencyRow 
+            <CurrencyRow 
 
             onChangeAmount={handleFromAmountChange}
             amount={fromAmount}
@@ -97,7 +98,7 @@ const Ethereum = () => {
 
             <div>=</div>
 
-            <BtcCurrencyRow  
+            <CurrencyRow  
 
             onChangeAmount={handleToAmountChange}
             amount={toAmount}
