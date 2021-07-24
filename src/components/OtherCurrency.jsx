@@ -29,6 +29,8 @@ const OtherCurrency = () => {
         const [exchangeRate, setExchangeRate] = useState()
         const [amount, setAmount] = useState (1)
         const [amountInFromCurrency, setAmountInFromCurrency ] = useState (true)
+
+        
         
 
         let toAmount, fromAmount
@@ -49,7 +51,8 @@ const OtherCurrency = () => {
             setFromCurrency(data[0])
             setToCurrency(data[2])
             setExchangeRate(data[0].current_price)
-        //    console.log(data[2].current_price)
+            // console.log(data.map((price)=> price.current_price))
+            // console.log(data.map((price)=> price.symbol))
         }
         
 
@@ -59,17 +62,9 @@ const OtherCurrency = () => {
            
         }, [])
 
+      
 
-        // useEffect(()=>{
-        //     // const newCryptoUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&"
-        //     if (fromCurrency !=null && toCurrency != null) {
-        //         fetch(`${cryptoUrl}`)
-        //         .then(res => res.json())
-        //         .then(data => setExchangeRate(data.rates[toCurrency]))
-        //     }
-           
 
-        // }, [fromCurrency, toCurrency])
 
      function handleFromAmountChange(e){
         setAmount(e.target.value)
@@ -104,6 +99,7 @@ const OtherCurrency = () => {
                 />
                 
                 <div>=</div>
+                
                 <CurrencyRow  
                 currencyOptions={currencyOptions}  
                 selectedCurrency={toCurrency} 
@@ -112,8 +108,11 @@ const OtherCurrency = () => {
                 amount={toAmount}
                 />
 
+                 
 
             </div>
+
+           
               
     )
 }
