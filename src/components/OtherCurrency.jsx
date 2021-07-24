@@ -14,7 +14,7 @@ const OtherCurrency = () => {
         const data = await response.json() 
 
         const number = (data) 
-        // console.log(number.map((precio)=>precio.current_price))    
+        // console.log(number)    
         setApi(number)   
     }
 
@@ -32,8 +32,9 @@ const OtherCurrency = () => {
                 <table className="table">
                     <thead>
                         <tr>
-                        <th>nombres</th>
-                        <th>precios</th>
+                        {api.map(element=>(   <th key={element.id} > {element.symbol}</th>  )) }
+                    
+
                         </tr>
                      
                     </thead>
@@ -46,7 +47,10 @@ const OtherCurrency = () => {
                     <tr >
                     {api.map(element=>(   <td key={element.id} > {element.current_price}</td>  )) }
                     </tr>
-                
+
+                    <tr >
+                    {api.map(element=>(   <td key={element.id} >  <img src={element?.image}  alt="logos" className="logo"/> </td>  )) }
+                    </tr>
                 </tbody>
                     
 
