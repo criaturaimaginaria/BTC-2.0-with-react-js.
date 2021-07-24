@@ -28,35 +28,35 @@ const OtherCurrency = () => {
    
         <div className="currencies">
             <h1>other currencies</h1>
+            
 
-                <table className="table">
-                    <thead>
-                        <tr>
-                        {api.map(element=>(   <th key={element.id} > {element.symbol}</th>  )) }
-                    
+                <div className="div-container">
 
-                        </tr>
-                     
-                    </thead>
-
-                <tbody>
-                     <tr >
-                    {api.map(element=>(   <td key={element.id} > {element.name}</td>  )) }
-                    </tr>
-
-                    <tr >
-                    {api.map(element=>(   <td key={element.id} > {element.current_price}</td>  )) }
-                    </tr>
-
-                    <tr >
-                    {api.map(element=>(   <td key={element.id} >  <img src={element?.image}  alt="logos" className="logo"/> </td>  )) }
-                    </tr>
-                </tbody>
-                    
-
-                </table>   
                    
-                
+                 
+  
+                  
+                    <div className="information">
+                           {api.map(element=>(   <pre> <div key={element.id} className="information-columns" >   
+                           <img src={element?.image }  alt="logos" className="logos"/>    {element.name } {element.symbol}         {element.current_price}
+                               </div>    </pre> 
+                           
+                           
+                           )) }
+                    </div>
+                   
+
+                     {/* <div  className="information">
+                          {api.map(element=>(   <p key={element.id} > {element.symbol} </p>  )) }
+                    </div> */}
+
+                    {/* <div className="information">
+                         {api.map(element=>(   <p key={element.id} > {element.current_price}</p>  )) }
+                    </div> */}
+
+                   
+                </div>
+          
                    
                
    
