@@ -23,9 +23,7 @@ const OtherCurrency = () => {
     },[] )
 // ------------------------------------------------------------------------
     
-        const [currencyOptions, setcurrencyOptions] = useState ([])
-        const [fromCurrency, setFromCurrency] = useState ()
-        const [toCurrency, setToCurrency] = useState ()
+     
         const [exchangeRate, setExchangeRate] = useState()
         const [amount, setAmount] = useState (1)
         const [amountInFromCurrency, setAmountInFromCurrency ] = useState (true)
@@ -46,10 +44,7 @@ const OtherCurrency = () => {
         const currencyApi = async () =>{
             const response = await fetch(cryptoUrl)
             const data = await response.json() 
-            
-            setcurrencyOptions([ data.map((name)=>name.symbol), data.map((price)=>price.current_price)])
-            setFromCurrency(data[0])
-            setToCurrency(data[2])
+
             setExchangeRate(data[0].current_price)
             // console.log(data.map((price)=> price.current_price))
             // console.log(data.map((price)=> price.symbol))
@@ -85,26 +80,19 @@ const OtherCurrency = () => {
                 {api.map(element=>(
                     <option key={element.id} value={element.current_price}  > {element.name}</option>
                 ))
-                }
-
-               
+                }    
             </select>
             
+
                 <CurrencyRow 
-                currencyOptions={currencyOptions} 
-                selectCurrency={fromCurrency} 
-                onChangeCurrency={e => setFromCurrency(e.target.value)}
-                onChangeAmount={handleFromAmountChange}
+                onChangeAmount={handleFromAmountChange} //x
                 amount={fromAmount}
                 />
                 
                 <div>=</div>
                 
                 <CurrencyRow  
-                currencyOptions={currencyOptions}  
-                selectedCurrency={toCurrency} 
-                onChangeCurrency={e => setToCurrency(e.target.value)}
-                onChangeAmount={handleToAmountChange}
+                onChangeAmount={handleToAmountChange} //x
                 amount={toAmount}
                 />
 
