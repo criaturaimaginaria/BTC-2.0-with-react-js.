@@ -43,8 +43,8 @@ function formatNumber(num) {
                 <td>{api.ath}</td>
 
                 <td>  { api.price_change_percentage_24h > 0 ?   
-                <p style={{color:"#13a01a"}} >  {api.price_change_percentage_24h.toFixed(2) } </p>
-                : <p style={{color:"#e91008"}} > {api.price_change_percentage_24h.toFixed(2) } </p>  }  </td>
+                <p style={{color:"#13a01a"}} >  {api.price_change_percentage_24h.toFixed(2) }% </p>
+                : <p style={{color:"#e91008"}} > {api.price_change_percentage_24h.toFixed(2) }% </p>  }  </td>
             </tr>
         )
     }
@@ -57,7 +57,7 @@ function formatNumber(num) {
 
             
 
-                <div className="div-container">
+         
 
              
                   <table>
@@ -80,7 +80,6 @@ function formatNumber(num) {
                   </table>
 
 
-                </div>
           
 
             </div>

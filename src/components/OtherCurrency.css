@@ -2,7 +2,8 @@
     margin-top: 11vh ;
     padding-bottom: 29vh;
     color: rgb(0, 0, 0);
-    max-width: 50%
+    max-width: 50%;
+
   }
 
 .symbol {
@@ -24,24 +25,28 @@
 
   table{
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 20px;
-    margin: 4vw;
     font-size: 1.2em;
     font-weight: normal;
     background-color: rgba(230, 230, 230, 0.349);
+
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 
   table thead tr{
     background-color: rgb(82, 127, 148);
     color: rgb(207, 207, 207);
     text-align: left;
+    
   }
 
   table th{
-    padding: 0.1em;  
+    padding: 1em;
     
   }
+
   table td{
     padding: 0.6em; 
   }
@@ -49,10 +54,4 @@
   table tbody tr{
     border-bottom: 0.1px solid #8b8b8b69;
   }
-/* 
-  table tbody tr:nth-of-type(even){
-    background-color: rgba(230, 230, 230,  0.349);
-  }
- */
-
 
