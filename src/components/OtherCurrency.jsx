@@ -21,40 +21,30 @@ const OtherCurrency = () => {
         marketapi()
     },[] )
 
-// stack overflow algorithm ---------------------------------
-    // function abbreviateNumber(value) {
-    //     var newValue = value;
-    //     if (value >= 1000) {
-    //         let suffixes = ["", "k", "m", "b","t"];
-    //         let suffixNum = Math.floor( (""+value).length/3 );
-    //         let shortValue = '';
-    //         for (let precision = 2; precision >= 1; precision--) {
-    //             shortValue = parseFloat( (suffixNum != 0 ? (value / Math.pow(1000,suffixNum) ) : value).toPrecision(precision));
-    //             let dotLessShortValue = (shortValue + '').replace(/[^a-zA-Z 0-9]+/g,'');
-    //             if (dotLessShortValue.length <= 3) { break; }
-    //         }
-    //         if (shortValue % 1 != 0)  shortValue = shortValue.toFixed(1);
-    //         newValue = shortValue+suffixes[suffixNum];
-    //     }
-    //     return newValue;
-    // }
-//  ----------------------------------------------------------   
 
 function formatNumber(num) {
-    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+
+        if (num < 1000000000) {
+        return  num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.').slice(0 , 6) + "M" 
+        } 
+        else if (num < 1000000000000) {
+            return  num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.').slice(0 , 6) + "B" 
+        }
+    return num
   }
 
     const tableData = (api) =>{
         return(
             <tr key={api.id} >
                 <td>{<img src={api?.image }  alt="logos" className="logos"/>   }</td>  
-                <td>  { <div className="symbol"> {api.symbol} </div>}   { <div className="name"> {api.name } </div> }   </td>
-                <td>{ formatNumber(api.market_cap)  }</td>
+                <td>  { <div className="symbol"> {api.symbol} </div>} { <div className="name"> {api.name } </div> } </td>
+                <td>{ formatNumber(api.market_cap) }  </td>
                 <td>{api.current_price}</td>
                 <td>{api.ath}</td>
+
                 <td>  { api.price_change_percentage_24h > 0 ?   
-                <p style={{color:"green"}} >  {api.price_change_percentage_24h.toFixed(2) } </p>
-                : <p style={{color:"red"}} > {api.price_change_percentage_24h.toFixed(2) } </p>  }  </td>
+                <p style={{color:"#13a01a"}} >  {api.price_change_percentage_24h.toFixed(2) } </p>
+                : <p style={{color:"#e91008"}} > {api.price_change_percentage_24h.toFixed(2) } </p>  }  </td>
             </tr>
         )
     }
@@ -73,7 +63,7 @@ function formatNumber(num) {
                   <table>
                       <thead>
                           <tr>
-                            <th> O</th> 
+                            <th> #</th> 
                             <th>NAME</th>
                             <th>MARKET CAP</th>
                             <th>PRICE</th>
