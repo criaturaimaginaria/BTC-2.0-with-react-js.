@@ -14,14 +14,24 @@ const OtherCurrency = () => {
         const data = await response.json() 
 
         const number = (data) 
-        // console.log(number)    
+        console.log(number)    
         setApi(number)   
     }
 
     useEffect(()=>{  
         marketapi()
     },[] )
-// ------------------------------------------------------------------------
+
+    const tableData = (api) =>{
+        return(
+            <tr >
+                <td>{<img src={api?.image }  alt="logos" className="logos"/>   }</td>  
+                <td>{api.name}</td>
+                <td>{api.symbol}</td>
+                <td>{api.current_price}</td>
+            </tr>
+        )
+    }
 
     return (
 
@@ -32,19 +42,50 @@ const OtherCurrency = () => {
 
                 <div className="div-container">
 
-                   
+             
+                  <table>
+                      <thead>
+                          <tr>
+                            <th>name</th> 
+                            <th></th>
+                            <th></th>
+                            <th>price</th>
+                          </tr>  
+                      </thead>
+                      
+                      <tbody>
+                            <tr >
+                                
+                              
+                            </tr>
+                            { api.map(tableData)}    
+                      </tbody>
+
+
+                  </table>
+
                  
-  
-                  
-                    <div className="information">
+
+
+
+
+
+
+
+                    {/* <div className="information">
                            {api.map(element=>(   <pre> <div key={element.id} className="information-columns" >   
                            <img src={element?.image }  alt="logos" className="logos"/>    {element.name } {element.symbol}         {element.current_price}
                                </div>    </pre> 
                            
                            
                            )) }
-                    </div>
+                    </div> */}
                    
+
+
+
+
+
 
                      {/* <div  className="information">
                           {api.map(element=>(   <p key={element.id} > {element.symbol} </p>  )) }

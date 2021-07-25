@@ -16,7 +16,10 @@
 	margin: 4vw;
   }
 
+table th{
 
+ padding-right: 4em;
+}
   .information{
 	  margin-top: 0;
 	  display: flex;
