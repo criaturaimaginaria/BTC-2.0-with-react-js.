@@ -22,13 +22,19 @@ const OtherCurrency = () => {
         marketapi()
     },[] )
 
+    const hello = "gello"
+
     const tableData = (api) =>{
         return(
-            <tr >
+            <tr key={api.id} >
                 <td>{<img src={api?.image }  alt="logos" className="logos"/>   }</td>  
-                <td>{api.name}</td>
-                <td>{api.symbol}</td>
+                <td>  { <div className="symbol"> {api.symbol} </div>}   { <div className="name"> {api.name } </div> }   </td>
+                <td></td> 
                 <td>{api.current_price}</td>
+                <td>{api.ath}</td>
+                <td>  { api.price_change_percentage_24h > 0 ?   
+                <p style={{color:"green"}} >  {api.price_change_percentage_24h } </p>
+                : <p style={{color:"red"}} > {api.price_change_percentage_24h } </p>  }  </td>
             </tr>
         )
     }
@@ -46,56 +52,23 @@ const OtherCurrency = () => {
                   <table>
                       <thead>
                           <tr>
-                            <th>name</th> 
+                            <th>NAME</th> 
                             <th></th>
                             <th></th>
-                            <th>price</th>
+                            <th>PRICE</th>
+                            <th>ATH</th>
+                            <th>24H CHANGE</th>
                           </tr>  
                       </thead>
                       
                       <tbody>
-                            <tr >
-                                
-                              
-                            </tr>
                             { api.map(tableData)}    
                       </tbody>
 
 
                   </table>
 
-                 
 
-
-
-
-
-
-
-                    {/* <div className="information">
-                           {api.map(element=>(   <pre> <div key={element.id} className="information-columns" >   
-                           <img src={element?.image }  alt="logos" className="logos"/>    {element.name } {element.symbol}         {element.current_price}
-                               </div>    </pre> 
-                           
-                           
-                           )) }
-                    </div> */}
-                   
-
-
-
-
-
-
-                     {/* <div  className="information">
-                          {api.map(element=>(   <p key={element.id} > {element.symbol} </p>  )) }
-                    </div> */}
-
-                    {/* <div className="information">
-                         {api.map(element=>(   <p key={element.id} > {element.current_price}</p>  )) }
-                    </div> */}
-
-                   
                 </div>
           
                    

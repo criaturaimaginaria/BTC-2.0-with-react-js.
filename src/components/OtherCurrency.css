@@ -18,18 +18,22 @@
 
 table th{
 
- padding-right: 4em;
+ padding-right: 1em;
 }
-  .information{
-	  margin-top: 0;
-	  display: flex;
-	  flex-direction: column;
-  }
 
+.name{
+  font-size: 0.9em;
+ 
+}
+
+.symbol{
+  font-size: 1.2em;
+  font-weight: 900;
+}
 
 .logos{
 
-	width: 2em;
+	width: 1.7em;
 }
 
 
