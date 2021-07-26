@@ -84,28 +84,31 @@ const BTCmarket = () => {
     
         return (
             <div className="bitcoin">
-
+                    <img src={api2}  alt="BTC" className="btc-logo"/>
                    <h1> Bitcoin </h1>
-                   <h1>Current price: {api} USD</h1>
+                   <h2>Current price: {api} USD</h2>
                    
-                   <h1> Market cap: {Mcap}</h1>
-                   <img src={api2}  alt="BTC" className="btc-logo"/>
+                   <h2> Market cap: {Mcap}</h2>
+                   
 
-               
+               <div className="convContainer">
+                        
+                         <CurrencyRow 
+
+                        onChangeAmount={handleFromAmountChange}
+                        amount={fromAmount}
+                        />
+
+                        <div className="equal">=</div>
+
+                        <CurrencyRow  
+
+                        onChangeAmount={handleToAmountChange}
+                        amount={toAmount}
+                        />
+
+               </div>
             
-                   <CurrencyRow 
-
-                onChangeAmount={handleFromAmountChange}
-                amount={fromAmount}
-                />
-                
-                <div>=</div>
-                
-                <CurrencyRow  
-    
-                onChangeAmount={handleToAmountChange}
-                amount={toAmount}
-                />
                
             </div>
         )

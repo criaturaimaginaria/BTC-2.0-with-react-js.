@@ -1,10 +1,28 @@
 .bitcoin{
     margin-top: 11vh ;
     padding-bottom: 29vh;
+    color: #adadaf;
   }
   
   .btc-logo{
-    width: 8em;
+    width: 4em;
   }
+
+.convContainer{
+  text-align: center;
+}  
   
-  
+input{
+  font-size: 1.4em;
+}
+
+.equal{
+  font-size: 2.2rem;
+  font: bold;
+}
+
+input{
+  border-radius: 0.2em;
+  padding:0.2em;
+  width: 8em;
+}
