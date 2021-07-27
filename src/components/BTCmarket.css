@@ -2,6 +2,7 @@
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 10vh ;
+
     display: grid;
     grid-template-columns: 50% 50%   ;
     grid-template-rows: 50% 50%;
@@ -9,14 +10,17 @@
     color: #c2c2c2;
     /* color: #c3c3c3; */
     /* background-color: #5b5b62; */
-    border-radius: 0.2em;
+ 
     border-bottom: 0.1px solid #8b8b8b69;
-    border-right: 0.1px solid #8b8b8b69;
+    border-top: 0.1px solid #8b8b8b69;
+    /* border-right: 0.1px solid #8b8b8b69; */
   }
 
  /* -----------------------------------------  */
 .one{
-  padding-bottom: 5em;
+  margin-bottom: 5em;
+  margin-top: 1.4em;
+  margin-left: 1.7em;
 
 }
 .btc-logo{
@@ -39,11 +43,10 @@
   display: inline-block;
 
 }
-/* ---------------------------------------------- */
-.two{
 
-  border-left: 0.1px solid #8b8b8b69;
-  border-bottom: 0.1px solid #8b8b8b69;
+.two{
+ margin-top: 1em;
+  /* border-bottom: 0.1px solid #8b8b8b69; */
 }
 
 .three{
@@ -51,20 +54,17 @@
  flex-direction: column;
  align-items: center;
  justify-content: center;
- color: white;
+ color: rgb(255, 255, 255);
  
 }
 .four{
-  border-left: 0.1px solid #8b8b8b69;
-  background-image: url('./curr.jpg');
+
+  background-image: url('./curr.png');
   background-size: cover;
   background-position: center;
 }
 
-.curr{
-  
-  width: 10em;
-}
+/* -------------------------------------------- */
 
 input{
   font-size: 1em;
