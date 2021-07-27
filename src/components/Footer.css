@@ -10,8 +10,8 @@ footer{
    justify-content: space-around;
    align-items: center;
  
-   background: rgb(42, 42, 42);
-   color: white;
+   background: rgb(56, 56, 63);
+   color: rgb(255, 255, 255);
    opacity: 0.8 ;
  
  }
