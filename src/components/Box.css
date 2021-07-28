@@ -1,4 +1,4 @@
-.bitcoin{
+.box{
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 10vh ;
@@ -23,7 +23,7 @@
   margin-left: 1.7em;
 
 }
-.btc-logo{
+.logo-box{
   width: 3em;
   display: inline-block;
 }
@@ -46,7 +46,17 @@
 
 .two{
  margin-top: 1em;
-  /* border-bottom: 0.1px solid #8b8b8b69; */
+
+
+    /* grid-template-rows: 50% 50%; */
+ /* background-color: rgba(44, 44, 56, 0.294); */
+}
+
+.two h4{
+  color: rgb(110, 110, 110);
+}
+.two h3{
+  color: #c2c2c2;
 }
 
 .three{

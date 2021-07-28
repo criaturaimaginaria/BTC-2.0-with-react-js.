@@ -1,110 +1,77 @@
 import React, {useState, useEffect} from 'react'
-import CurrencyRow from './CurrencyRow'
-import  './Ethereum.css'
+import Box from './Box'
+
 
 
 const Ethereum = () => {
     const apuUrl  = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
-    
+   
+    const [name, setName] = useState ()
+    const [symbol, setSymbol] = useState ()
     const [api, setApi] = useState()
+    const[api2, setApi2] = useState()
     const[Mcap, setMcap] = useState()
-    const[img, setImg] = useState()
+    const[high, setHigh] = useState() 
+    const [low, setLow ] = useState()
+    const[supply, setSupply] = useState()
+    const [data, setData] = useState()
+    
+    // prop to currency conversos -----------------
+    const [exchangeRate, setExchangeRate] = useState()
+
+    // ------------------------------------------------------------------------
 
 
-    const marketapi = async () =>{
+    const currencyApi = async () =>{
         const response = await fetch(apuUrl)
         const data = await response.json() 
-        const number = (data[1].current_price) 
-        const marketCapital = (data[1].market_cap)
-        const img = (data[1].image)
+
+        setName(data[1].name)
+        setSymbol(data[1].symbol.toUpperCase())
+        setApi2(data[1].image)
+        setApi(data[1].current_price.toFixed(0))
+        setMcap(data[1].market_cap)
+        setHigh(data[1].high_24h)
+        setLow(data[1].low_24h)
+        setSupply(data[1].circulating_supply)
+        // console.log(data)
+        setData(data[1].price_change_percentage_24h.toFixed(2))
+
+        setExchangeRate(data[1].current_price.toFixed(0))
         
-        setApi(number)
-        setMcap(marketCapital)
-        setImg(img)
     }
-
-  useEffect(()=>{
-        // setInterval(fetchBtcApi, 1000 )   
-        marketapi()
-
-    }, )
-
-
-        // ------------------------------------------------------------------------
-    
- 
-   
-    
-        const [exchangeRate, setExchangeRate] = useState()
-        const [amount, setAmount] = useState (1)
-        const [amountInFromCurrency, setAmountInFromCurrency ] = useState (true)
-    
         
-        
-    
-        let toAmount, fromAmount
-        if (amountInFromCurrency) {
-            fromAmount = amount
-            toAmount = amount * exchangeRate
-        } else{
-            toAmount = amount
-            fromAmount = amount / exchangeRate
-        }    
-    
-    
-        const currencyApi = async () =>{
-            const response = await fetch(apuUrl)
-            const data = await response.json() 
-    
-            setExchangeRate(data[1].current_price.toFixed(0))
-            // console.log(data.map((price)=> price.current_price))
-            // console.log(data.map((price)=> price.symbol))
-        }
-        
-    
-                
-        useEffect(()=>{
-            currencyApi()
-           
-        }, [])
-    
-      
-    
-    
-    
-     function handleFromAmountChange(e){
-        setAmount(e.target.value)
-        setAmountInFromCurrency(true)
-     }
-     function handleToAmountChange(e){
-        setAmount(e.target.value)
-        setAmountInFromCurrency(false)
-     }
+    useEffect(()=>{
+        currencyApi()
+    }, [])
      
+
+    const percentageChange = (data) =>{
+        return(
+            <p >
+                { (data ) > 0 ? <p className="green"> {data }% </p> : <p className="red" > {data}% </p>  } 
+             </p>
+        )
+    }
+    
+    const exchangeRateEth = exchangeRate
     
     return (
-        <div className="ETH">
-            <h1>Ethereum </h1>
-            <h1>Current price: {Math.trunc(api)} USD </h1>
-            <h1>Market cap: {Mcap} </h1>
-            <img src={img}  alt="ETH" className="eth-logo"/>
-
-
-            <CurrencyRow 
-
-            onChangeAmount={handleFromAmountChange}
-            amount={fromAmount}
+        <div>
+            <Box
+                image={api2}
+                name={name}
+                symbol={symbol}
+                price={api}
+                Mcap={Mcap}
+                high={high}
+                low={low}
+                supply={supply}
+                valueChange={percentageChange(data)}
+                exchangeRate={exchangeRateEth}
             />
-
-            <div>=</div>
-
-            <CurrencyRow  
-
-            onChangeAmount={handleToAmountChange}
-            amount={toAmount}
-            />
-
         </div>
+        
     )
 }
 
