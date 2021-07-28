@@ -40,17 +40,15 @@
     background-color: #313136;
     color: #adadaf;
     text-align: left;
-    
   }
 
-  table th{
+  thead  th{
     padding: 1em;
-    
+ 
   }
 
   table td{
     padding: 0.6em; 
-    
   }
 
   table tbody tr{

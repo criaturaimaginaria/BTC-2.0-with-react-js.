@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Box from './Box'
-import eth from './eth.png'
+import eth from './eth2.png'
 
 
 
