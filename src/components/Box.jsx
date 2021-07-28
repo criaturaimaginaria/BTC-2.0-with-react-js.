@@ -1,8 +1,9 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 import CurrencyRow from './CurrencyRow'
 import './Box.css'
 
 const Box = (props) => {
+    const sideImg = (props.sideImg)
    
     const image =  (props?.image)
     const name = (props.name)
@@ -14,6 +15,8 @@ const Box = (props) => {
     const supply = (props.supply)
     const data = (props.valueChange)
     const exchangeRate = (props.exchangeRate)
+
+    const To = (props.To)
    
 // -----------------------------------------------------------
     
@@ -60,14 +63,14 @@ const Box = (props) => {
  
              <div className="two">
                 <div>
-                  <h4> Market cap </h4> <h3> ${marketCap}</h3>
-                  <h4>low & high 24h </h4> <h3> ${low?.toFixed(0)} - ${high?.toFixed(0)} </h3>
+                     <h4> Market cap </h4> <h3> ${marketCap}</h3>
+                     <h4>low & high 24h </h4> <h3> ${low?.toFixed(0)} - ${high?.toFixed(0)} </h3>
                   
 
                    </div>
-                   <h4> circulating supply </h4> <h3>{supply} </h3>
+                   
                    <div>
-
+                       <h4> circulating supply </h4> <h3>{supply} </h3>
                    </div>
 
         
@@ -75,7 +78,7 @@ const Box = (props) => {
                    
             <div className="three">
 
-                <h4>BTC to USD</h4>
+                <h4> {To}  </h4>
                      <CurrencyRow  
 
                     onChangeAmount={handleFromAmountChange}
@@ -93,8 +96,8 @@ const Box = (props) => {
                     
             </div>
 
-         <div className="four">
-       
+         <div className="four" >
+               <img src={sideImg}  alt="sideImg" className="side-img" />  
          </div>
             
                

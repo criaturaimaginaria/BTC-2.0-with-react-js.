@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from 'react'
 import Box from './Box'
-
+import btc from './btc.jpg'
 
 const BTCmarket = () => {
     const apuUrl  = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
-   
+    const sideImg = btc
+
     const [name, setName] = useState ()
     const [symbol, setSymbol] = useState ()
     const [api, setApi] = useState()
@@ -56,7 +57,7 @@ const BTCmarket = () => {
   return (
 
         <div>
-            BTC to USD
+           
             <Box 
                 image={api2}
                 name={name}
@@ -68,6 +69,8 @@ const BTCmarket = () => {
                 supply={supply}
                 valueChange={percentageChange(data)}
                 exchangeRate={exchangeRateBtc}
+                sideImg={sideImg}
+                To={"BTC to USD"}
             />
         </div>
         

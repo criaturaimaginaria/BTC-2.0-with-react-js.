@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Box from './Box'
+import eth from './eth.png'
 
 
 
 const Ethereum = () => {
     const apuUrl  = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
-   
+    const sideImg = eth
+
     const [name, setName] = useState ()
     const [symbol, setSymbol] = useState ()
     const [api, setApi] = useState()
@@ -69,7 +71,10 @@ const Ethereum = () => {
                 supply={supply}
                 valueChange={percentageChange(data)}
                 exchangeRate={exchangeRateEth}
-            />
+                sideImg = {sideImg}
+                To={"ETH to USD"}
+             />
+     
         </div>
         
     )
