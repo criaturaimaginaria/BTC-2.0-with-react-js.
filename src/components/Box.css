@@ -2,19 +2,18 @@
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 10vh ;
-    
-
+  
     display: grid;
     grid-template-columns: 50% 50%   ;
     grid-template-rows: 50% 50%;
 
     color: #c2c2c2;
     /* color: #c3c3c3; */
-    /* background-color: #5b5b62; */
+   
  
     border-bottom: 0.1px solid #8b8b8b69;
     border-top: 0.1px solid #8b8b8b69;
-    /* border-right: 0.1px solid #8b8b8b69; */
+
   }
 
  /* -----------------------------------------  */
@@ -48,19 +47,16 @@
 .two{
   display: grid;
   grid-template-columns: 50%  50%  ;
-
-
-    /* grid-template-rows: 50% 50%; */
- /* background-color: rgba(44, 44, 56, 0.294); */
 }
 
 .two h4{
   color: rgb(110, 110, 110);
-  margin-top: 1em;
+  margin-top: 1.4em;
 }
 .two h3{
   color: #c2c2c2;
 }
+
 
 .three{
  display: flex;
@@ -71,10 +67,10 @@
  
 }
 .four{
-  /* position: relative; */
+
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .side-img{
   width: 50%;

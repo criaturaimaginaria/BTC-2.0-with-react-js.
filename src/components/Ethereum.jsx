@@ -48,13 +48,6 @@ const Ethereum = () => {
     }, [])
      
 
-    const percentageChange = (data) =>{
-        return(
-            <p >
-                { (data ) > 0 ? <p className="green"> {data }% </p> : <p className="red" > {data}% </p>  } 
-             </p>
-        )
-    }
     
     const exchangeRateEth = exchangeRate
     
@@ -69,7 +62,7 @@ const Ethereum = () => {
                 high={high}
                 low={low}
                 supply={supply}
-                valueChange={percentageChange(data)}
+                valueChange={data}
                 exchangeRate={exchangeRateEth}
                 sideImg = {sideImg}
                 To={"ETH to USD"}

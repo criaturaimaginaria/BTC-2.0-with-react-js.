@@ -44,14 +44,7 @@ const BTCmarket = () => {
         currencyApi()
     }, [])
 
-    const percentageChange = (data) =>{
-        return(
-            <p >
-                { (data ) > 0 ? <p className="green"> {data }% </p> : <p className="red" > {data}% </p>  } 
-             </p>
-        )
-    }
-    
+ 
     
     const exchangeRateBtc = exchangeRate
   return (
@@ -67,7 +60,7 @@ const BTCmarket = () => {
                 high={high}
                 low={low}
                 supply={supply}
-                valueChange={percentageChange(data)}
+                valueChange={data}
                 exchangeRate={exchangeRateBtc}
                 sideImg={sideImg}
                 To={"BTC to USD"}

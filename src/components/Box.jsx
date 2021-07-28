@@ -45,7 +45,14 @@ const Box = (props) => {
  }
  
 
- 
+ const percentageChange = (data) =>{
+    return(
+        <p >
+            { (data ) > 0 ? <p className="green"> {data }% </p> : <p className="red" > {data}% </p>  } 
+         </p>
+    )
+}
+
 
   return (
      <div className="box">
@@ -57,7 +64,7 @@ const Box = (props) => {
                        <br></br>
               </div>
 
-              <div data-price> ${price}  </div> <p data-per> {(data)}</p>
+              <div data-price> ${price}  </div> <p data-per> {percentageChange(data)}   </p>
              
          </div>
  
@@ -69,7 +76,7 @@ const Box = (props) => {
 
                    </div>
                    
-                   <div>
+                   <div> 
                        <h4> circulating supply </h4> <h3>{supply} </h3>
                    </div>
 
