@@ -47,9 +47,9 @@ const Box = (props) => {
 
  const percentageChange = (data) =>{
     return(
-        <p >
+        <div>
             { (data ) > 0 ? <p className="green"> {data }% </p> : <p className="red" > {data}% </p>  } 
-         </p>
+         </div>
     )
 }
 
@@ -59,17 +59,19 @@ const Box = (props) => {
 
          <div className="one">
               <div>
-                     <img src={image}  alt="BTC" className="logo-box" />  <div data-name> {name} </div> ({symbol}) 
+                     <img src={image}  alt="BTC" className="logo-box" /> 
+                      <div data-name> {name} </div> ({symbol}) 
                        <br></br>
                        <br></br>
               </div>
 
-              <div data-price> ${price}  </div> <p data-per> {percentageChange(data)}   </p>
+              <div data-price> ${price}    </div> 
+              <div data-per> {percentageChange(data)} </div>
              
          </div>
  
              <div className="two">
-                <div>
+                    <div>
                      <h4> Market cap </h4> <h3> ${marketCap}</h3>
                      <h4>low & high 24h </h4> <h3> ${low?.toFixed(0)} - ${high?.toFixed(0)} </h3>
                   
@@ -92,7 +94,7 @@ const Box = (props) => {
                     amount={fromAmount}
                     />
 
-                    <div className="equal">=</div>
+                    <p className="equal">=</p>
 
                     <CurrencyRow  
 

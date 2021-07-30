@@ -11,7 +11,7 @@ export const CurrencyRow = (props) => {
     return (
         <div>
         
-           <input type="number" className="input" value={priceAmount} onChange={amountChange} />
+           <input type="number" className="input" value={priceAmount.toString()} onChange={amountChange} />
      
         
         </div>

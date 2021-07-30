@@ -28,8 +28,6 @@ function App() {
 
           <Footer />
 
-          {/* <FetchBtc3 /> */}
-          {/* <FetchBtc /> */}
          </div>
 
     </Router>
