@@ -44,7 +44,7 @@ const Nav = () => {
         
         
         <nav>   
-            
+
             <>{imgDisplay(img)}</>
          
       {(toggleMenu || screenWidth > 900) && (
@@ -65,20 +65,22 @@ const Nav = () => {
             </ul>
       )}
 
-      <button onClick={toggleNav} className="btn">
+                 <div onClick={toggleNav}  className="btn">
+                        <div className="line"></div>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                 </div>  
+
+      {/* <button className="btn">
                 Hola
-      </button>
+      </button> */}
     
 {/*             
              <img src={logo} alt="btc nav" className="logo" />
            
          
                 <label for="menu-toggle"> 
-                        <div className="menu">
-                            <div className="line"></div>
-                            <div className="line"></div>
-                            <div className="line"></div>
-                        </div>
+                        
                     </label>  
 
                 <input type="checkbox" id="menu-toggle"/>  
