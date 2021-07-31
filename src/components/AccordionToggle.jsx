@@ -1,11 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
 import "./AccordionToggle.css"
-// import Chevron from './chevron.svg'
 import {Link} from 'react-router-dom';
 
 export default function AccordionToggle() {
-
-
 
     const [toggle, setToggle] = useState(false)
     const [heightEl, setHeightEl] = useState();
@@ -30,23 +27,17 @@ export default function AccordionToggle() {
             <button 
             onClick={toggleState}
             className="accordion-visible">
-                <span className="toggle_span">  
                         <div className={toggle ? "line animated-line" : "line"}></div>
                         <div className={toggle ? "line animated-line" : "line"}></div>
                         <div className={toggle ? "line animated-line" : "line"}></div>
-
-                </span>
-                {/* <img 
-                className={toggle && "active"}
-                src={Chevron} /> */}
             </button>
             
-            <div 
+                <div 
                     className={toggle ? "accordion-toggle animated" : "accordion-toggle"}
                     style={{height: toggle ? `${heightEl}` : "0px"}}
                     ref={refHeight}
                     >
-                <div  >
+                 <div  >
               
                     <Link to='/components/Main' className="link"> 
                         <p>Main</p>
