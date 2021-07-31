@@ -65,22 +65,17 @@ nav{
 
 
 
-  @media screen and (max-width:420px) {
-    nav{
-     justify-content:flex-start;
-   }
-   .logo{
-     margin-left: 1.1em;
-     align-content: flex-start;
-     max-height: 2em;
-     display: inline-flex;
-   }
- 
+
+
+
+ @media screen and (max-width:420px) {
+
+ .logo{
+   display: none;
+  
  }
- 
 
-
-
+}
 
 
 
@@ -152,17 +147,6 @@ li {
 
 }
 
-@media screen and (max-width:420px) {
-   nav{
-    justify-content:flex-start;
-  }
-  .logo{
-    margin-left: 1.1em;
-    align-content: flex-start;
-    max-height: 2em;
-    display: inline-flex;
-  }
 
-}
 
  */
