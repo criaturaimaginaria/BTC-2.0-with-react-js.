@@ -28,42 +28,59 @@
   }
 
   /* --------------toggle animation------------------------------------ */
+  
+
   .line{
     background: rgb(255, 199, 108);
     width: 2em;
     height: 0.3em;
-    margin: 0.3em;
+    margin-top: 0.3em;
     border-radius: 10px; 
     transition:  0.4s;
     transform: rotate(0deg);
   }
+  .line:nth-child(3n +1 ){
+    transition:  1s;
+  }
+
+  .line:nth-child(3n +3 ){
+    transition:  1s;
+  }
+
+
+
 
   .animated-line:nth-child(3n +1 ){
-    transform: rotate(140deg);
-    margin-right: 0.8em;
+   
+    background: rgb(88, 88, 88);
+    transform: rotate(180deg);
+  
     width: 2em;
     height: 0.3em;
-    /* margin: 0.3em; */
-    border-radius: 4px; 
-    transition:0.4s;
+    margin-top: 0.3em;
+
+    transition:1s;
   }
   .animated-line:nth-child(3n +2 ){
-    transform: rotate(-160deg);
-    
+    /* background: rgb(255, 199, 108); */
+    background: rgb(88, 88, 88);
+    transform: rotate(-180deg);
     width: 2em;
     height: 0.3em;
-    /* margin: 0.3em; */
-    border-radius: 4px; 
+    margin-top: 0.3em;
     transition:0.4s;
-  }
-  .animated-line:nth-child(3n +3 ){
-   background: rgb(255, 255, 255);
 
-  
+/* 
+    transform: rotate(-270deg);
+    width: 2em; */
+  }
+
+  .animated-line:nth-child(3n +3 ){
+    transform: rotate(-180deg);
+   background: rgb(88, 88, 88);
     height: 0.3em;
-    /* margin: 0.3em; */
-    border-radius: 4px; 
-    transition:0.4s;
+    transition:1s;
+    margin-top: 0.3em;
   }
 
 
