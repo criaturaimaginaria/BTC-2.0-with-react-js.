@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import logo from '../logo.png';
 import {Link} from 'react-router-dom';
 import './Nav.css';
+import AccordionToggle from './AccordionToggle';
 
 
 const Nav = () => {
@@ -16,7 +17,7 @@ const Nav = () => {
     }
   
     useEffect(() => {
-  
+        
       const changeWidth = () => {
         setScreenWidth(window.innerWidth);
       }
@@ -38,13 +39,12 @@ const Nav = () => {
     }
     
 
-
     return (  
 
         
         
         <nav>   
-
+           
             <>{imgDisplay(img)}</>
          
       {(toggleMenu || screenWidth > 900) && (
@@ -65,47 +65,14 @@ const Nav = () => {
             </ul>
       )}
 
-                 <div onClick={toggleNav}  className="btn">
-                        <div className="line"></div>
-                        <div className="line"></div>
-                        <div className="line"></div>
-                 </div>  
 
-      {/* <button className="btn">
-                Hola
-      </button> */}
-    
-{/*             
-             <img src={logo} alt="btc nav" className="logo" />
-           
-         
-                <label for="menu-toggle"> 
-                        
-                    </label>  
-
-                <input type="checkbox" id="menu-toggle"/>  
-
-            
-
-                    <ul className="nav-links">
-                        <Link to='/components/Main'>
-                            <li>Main</li>
-                        </Link>    
-                        <Link to='/components/BTCmarket'>
-                            <li>Bitcoin</li>
-                        </Link> 
-                        <Link to='/components/Ethereum'>
-                            <li>Ethereum</li>
-                        </Link> 
-                        <Link to='/components/OtherCurrency'>
-                            <li>Other Currency</li>
-                        </Link> 
-                        
-                    </ul> */}
-
-            
+                <div id="toggle">
+                <AccordionToggle  />
+                </div>
                
-            
+          
+
+       
         </nav>
     )
 }
