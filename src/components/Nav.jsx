@@ -46,24 +46,24 @@ const Nav = () => {
         <nav>   
            
             <>{imgDisplay(img)}</>
-         
-      {(toggleMenu || screenWidth > 900) && (
-            <ul className="nav-links">
-                <Link to='/components/Main'>
-                    <li>Main</li>
-                </Link>    
-                <Link to='/components/BTCmarket'>
-                    <li>Bitcoin</li>
-                </Link> 
-                <Link to='/components/Ethereum'>
-                    <li>Ethereum</li>
-                </Link> 
-                <Link to='/components/OtherCurrency'>
-                    <li>Other Currency</li>
-                </Link> 
-                
-            </ul>
-      )}
+                    
+                {(toggleMenu || screenWidth > 900) && (
+                        <ul className="nav-links">
+                            <Link to='/components/Main'>
+                                <li>Main</li>
+                            </Link>    
+                            <Link to='/components/BTCmarket'>
+                                <li>Bitcoin</li>
+                            </Link> 
+                            <Link to='/components/Ethereum'>
+                                <li>Ethereum</li>
+                            </Link> 
+                            <Link to='/components/OtherCurrency'>
+                                <li>Other Currency</li>
+                            </Link> 
+                            
+                        </ul>
+                )}
 
 
                 <div id="toggle">

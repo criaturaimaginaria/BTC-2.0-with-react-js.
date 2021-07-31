@@ -30,10 +30,10 @@ export default function AccordionToggle() {
             <button 
             onClick={toggleState}
             className="accordion-visible">
-                <span>  
-                        <div className="line"></div>
-                        <div className="line"></div>
-                        <div className="line"></div>
+                <span className="toggle_span">  
+                        <div className={toggle ? "line animated-line" : "line"}></div>
+                        <div className={toggle ? "line animated-line" : "line"}></div>
+                        <div className={toggle ? "line animated-line" : "line"}></div>
 
                 </span>
                 {/* <img 
