@@ -1,15 +1,19 @@
 
 footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 50% ; */
+
     position: absolute;
     bottom: 0;
     width: 100%;
     min-height: 18vh;
  
-   font-size: 1.40em;
-   font-weight: 900;
-   display:flex;
+   /* font-size: 1.40em; */
+   
+   /* display:flex;
    justify-content: space-around;
-   align-items: center;
+   align-items: center; */
  
    background: rgb(56, 56, 63);
    color: rgb(255, 255, 255);
@@ -17,4 +21,115 @@ footer{
    opacity: 0.8 ;
 
  }
+
+ .one-e{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* background-color: black; */
+  margin: 0.5em;
+  margin-bottom: 0em;
+ }
+
+ .contacto{
+   /* background-color: rgb(116, 116, 116); */
+   color: rgb(146, 146, 146);
+   padding: 1em;
+   padding-left: 3.3em;
+
+   font-weight: 900;
+   font-size: 1.2em;
+
+ }
+
+ .contacto p{
+   color: rgb(255, 255, 255);
+   margin-top: 0.2em;
+   font-weight: 500;
+   font-size: 1rem;
+   /* padding-bottom: 1em; */
+ }
+
+ .mail{
+      
+   width: 1em;
+    margin-top: 0.5em;
+ }
+
+
+
+.segundo{
+  /* background-color: rgb(124, 124, 124); */
+  margin: 0.9em;
+  background-image: url(https://cdn.pixabay.com/photo/2013/12/08/12/12/bitcoin-225080_960_720.png);
+  background-position: center;
+  background-size: cover;
+}
+
+ .two-e{
+  /* background-color: rgb(93, 0, 0); */
+  border-left: 2px solid rgb(0, 0, 0);
+  
+  margin: 0.5em;
+  text-align: center;
+}
+ 
+
+.two-e a{
+  
+  /* margin: 2em;
+  text-decoration: none; */
+  color: rgb(255, 255, 255);
+}
+.two-e a:hover{
+  /* margin: 2em;
+  text-decoration: none; */
+  color: rgb(255, 211, 129);
+  border-bottom: 2px solid rgb(184, 125, 0);
+}
+
+.Redes{
+  /* background-color: rgb(116, 116, 116); */
+  color: rgb(146, 146, 146);
+  padding: 1em ;
+  font-weight: 900;
+  font-size: 1.2em;
+  
+}
+
+.Redes p {
+  color: rgb(255, 255, 255);
+  margin-top: 0.2em;
+  font-weight: 500;
+  font-size: 1rem;
+  /* padding-bottom: 1em; */
+  
+}
+
+@media screen and (max-width:980px) {
+
+  .segundo{
+   display: none;
+  }
+
+  .one-e{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* background-color: black; */
+    margin: 0em;
+    margin-bottom: 0em;
+   }
+
+   .contacto{
+    /* background-color: rgb(116, 116, 116); */
+    color: rgb(146, 146, 146);
+    padding: 1.9em;
+    padding-left: 0.5em;
+ 
+    font-weight: 900;
+    font-size: 1em;
+   }
+   
+ }
+ 
+ 
  

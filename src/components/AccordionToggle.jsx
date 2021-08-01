@@ -37,7 +37,7 @@ export default function AccordionToggle() {
                     style={{height: toggle ? `${heightEl}` : "0px"}}
                     ref={refHeight}
                     >
-                 <div  >
+                 <div onClick={toggleState} >
               
                     <Link to='/components/Main' className="link"> 
                         <p>Main</p>
