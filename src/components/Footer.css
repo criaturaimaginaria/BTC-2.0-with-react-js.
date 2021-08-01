@@ -60,7 +60,7 @@ footer{
 .segundo{
   /* background-color: rgb(124, 124, 124); */
   margin: 0.9em;
-  background-image: url(https://cdn.pixabay.com/photo/2013/12/08/12/12/bitcoin-225080_960_720.png);
+  background-image: url(./footerBtc.png);
   background-position: center;
   background-size: cover;
 }

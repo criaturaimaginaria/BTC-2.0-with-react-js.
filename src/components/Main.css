@@ -6,16 +6,55 @@
     padding-bottom: 25vh;
   }
 
+  /* ----------------------------------- */
   .title{
     color: #1f1d23;
     transition:  4s ease-in-out;
     margin-left: -4em;
   }
 
-  .animated{
+  .animated-title{
     color: rgb(200, 200, 200);
-    transition:  1.5s ;
+    transition:  1.8s ;
     margin-left: 0em;
-   
   }
+  /* ------------------------------------- */
+
+  .presentation{
+    display: grid;
+    grid-template-rows: auto;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 40vh;
+    background-image: url(./backGroundBtc.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+/* --------------------------------------------- */
+
+.window-one{
+  background-color: #1f1d23;
+
+}
+
+.animated-window-one{
+  background-color: #1f1d23;
+
+}
+
+.window-two{
+    background-color: #1f1d23;
+    /* margin-top: 30em; */
+    /* animation-timing-function: 3.4s cubic-bezier(.39,-0.1,.16,1.49); */
+}
+
+.animated-window-two{
+  background-color: #1f1d23;
+  margin-top: 30em;
+  transition: 3s cubic-bezier(.41,.74,.56,.38);
   
+
+}

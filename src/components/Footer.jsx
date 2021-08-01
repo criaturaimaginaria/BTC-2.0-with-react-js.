@@ -4,7 +4,6 @@ import './Footer.css'
 
 
 const Footer = () => {
-    const crypto = <img src="https://getvectorlogo.com/wp-content/uploads/2019/10/crypto-com-vector-logo.png" className="mail"/>
 
     return (
       
