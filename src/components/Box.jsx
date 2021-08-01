@@ -78,8 +78,8 @@ const Box = (props) => {
 
                    </div>
                    
-                   <div> 
-                       <h4> circulating supply </h4> <h3>{supply} </h3>
+                   <div className="supply">  
+                       <h4 > circulating supply </h4> <h3>{supply} </h3>
                    </div>
 
         

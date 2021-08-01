@@ -12,7 +12,7 @@ const Footer = () => {
             
                 <div className="one-e">
                     <div className="contacto">
-                         Contacto 
+                         Contact 
                           <p> valkjavalkja@gmail.com</p>
                           <p> +54 221 6257635</p>
                      </div>

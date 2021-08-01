@@ -114,6 +114,53 @@ from{transform: rotateY(360deg);}
 /* --------------------------------- */
 
 
+  /* ----responsive------ */
 
+  @media screen and (max-width:900px) {
+
+    .logo-box{
+      width: 2.1em; 
+    }
+    
+    [data-name]{
+      font-size: 1.5em ;
+    }
+    
+    [data-price]{
+      margin-left: 1.5em;
+      font-size: 1.2em;
+    }
+  
+        .two h4{
+          font-size: 0.9em;
+        }
+        .two h3{
+          font-size: 1em;
+        }
+        .supply{
+          margin-left: 1.5em;
+        }
+
+    }
+
+    @media screen and (max-width:420px) {
+
+      .box{
+        
+        grid-template-columns: 100% ;
+        /* grid-template-rows: 50%; */
+      }
+
+      .two{
+        display: none;
+      }
+
+      .side-img {
+        display: none;
+      }
+  
+      }
+    
+  
   
   

@@ -111,6 +111,10 @@ footer{
    display: none;
   }
 
+ }
+ 
+ 
+@media screen and (max-width:420px) {
   .one-e{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -130,6 +134,7 @@ footer{
    }
    
  }
+ 
  
  
  

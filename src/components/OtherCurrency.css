@@ -16,7 +16,7 @@
 }
 
 .logos{
-  float: left;
+  /* float: left; */
 	width: 1.7em;
 }
 
@@ -67,3 +67,63 @@
     font-weight: 900;
   }
 
+
+/* -------responsive----------- */
+
+  @media screen and (max-width:900px) {
+
+    table{ 
+      font-size: 1em;
+      width: 70vw;
+      margin-left: 12vw;
+      margin-right: 15vw;
+    }
+   }
+
+   @media screen and (max-width:655px) {
+
+    table{
+      width: 70vw;
+      font-size: 0.9em;
+      margin-right: 10vw;
+      margin-left: 10vw;
+    }
+
+   }
+   
+
+   /* --------iphone --------- */
+   @media screen and (max-width:415px) {
+    table{
+      font-size: 0.6em;
+      margin-left: 7.5vw;
+    }  
+   }
+
+
+    /* --------Moto G4 --------- */
+    @media screen and (max-width:361px) {
+
+      table{
+        width: 70vw;
+        font-size: 0.6em;
+        margin-right: 10vw;
+        margin-left: 5vw; 
+      }
+     
+     }
+  
+
+   /* --------iphone 5 ---------- */
+   @media screen and (max-width:358px) {
+
+    table{
+      width: 70vw;
+      font-size: 0.5em;
+      margin-right: 9vw;
+      margin-left: 6vw;
+    }
+   }
+
+   
+   
