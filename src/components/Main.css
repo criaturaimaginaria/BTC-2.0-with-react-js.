@@ -1,7 +1,21 @@
 .main{
+  text-align: center;
     margin-top: 8vh;
     margin-left: 10vw;
     margin-right: 10vw;
     padding-bottom: 25vh;
+  }
+
+  .title{
+    color: #1f1d23;
+    transition:  4s ease-in-out;
+    margin-left: -4em;
+  }
+
+  .animated{
+    color: rgb(200, 200, 200);
+    transition:  1.5s ;
+    margin-left: 0em;
+   
   }
   
