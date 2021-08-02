@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './Main.css'
 
+
 const Main = () => {
         const  [title, setTitle] = useState()
         const  [window, setWindow] = useState()
@@ -19,10 +20,15 @@ const Main = () => {
     return (
         <div className="main">
             <h1 className={title ? "animated-title" : "title"}>Decentralized money</h1>
-        <div className={window ? "back_background-animated" : "back:background"}>
+
+        <div className={window ? "back_background-animated" : "back_background"}>
               <div className="presentation">
-                <div className={window ? "animated-window-one" : "window-one"}></div>
-                <div className={window ? "animated-window-two" : "window-two"}> </div>
+                 
+                  <div className={window ? "animated-window-one" : "window-one"}></div>
+                  <div className={window ? "animated-window-two" : "window-two"}> </div>
+
+                
+                
             </div>
         </div>
             

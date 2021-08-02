@@ -21,35 +21,39 @@
   /* ------------------------------------- */
   .back_background{
     opacity: 0;
-    margin-top: 2em;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    height: 40vh;
-    background-image: url(https://i.gifer.com/NTHO.gif);
-    background-position: center;
-    background-size: cover; */
-    transition: 5s;
+    /* transition: 5s; */
   }
 
   .back_background-animated{
-    opacity:1 ;
-    margin-top: 2em;
+    
+    /* margin-top: 2em; */
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
     height: 40vh;
-    /* background-image: url(./main.gif); */
-    background-image: url(./white-line.gif);
+    background-image: url(./gold.png) ;
     background-position: center;
     background-size: cover;
-    transition: 4s;
+    transition: 2.5s;
+    animation: ingot 5s infinite;
   }
 
-
-
+  /* @keyframes ingot {
+    0% {
+      background-color: #001F3F;
+    }
+    50% {
+      padding-left: 0.2em;
+      background-color: #FF4136;
+    }
+    100% {
+      background-color: #001F3F;
+    }
+  } */
+  
 
   .presentation{
+   
     display: grid;
     grid-template-rows: auto;
     margin-top: 2em;
