@@ -26,8 +26,8 @@ const Footer = () => {
                      <div className="Redes">
                            Networks & Music
                            <p>
-                               <a href="https://github.com/criaturaimaginaria" target="_BLANK"> GitHub </a> <br></br>
-                               <a href="https://www.youtube.com/channel/UCSJQMZALjc4pqR5FTnsn8TA" target="_BLANK"> YouTube </a>    
+                               <a href="https://github.com/criaturaimaginaria" target="_BLANK" rel="noreferrer">  GitHub </a> <br></br>
+                               <a href="https://www.youtube.com/channel/UCSJQMZALjc4pqR5FTnsn8TA" target="_BLANK" rel="noreferrer"> YouTube </a>    
                           </p>
                      </div>                          
                     

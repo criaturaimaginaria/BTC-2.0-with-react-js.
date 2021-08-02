@@ -10,7 +10,7 @@ export default function AccordionToggle() {
     const refHeight = useRef()
 
     useEffect(() => {
-        console.log(refHeight);
+        // console.log(refHeight);
         setHeightEl(`${refHeight.current.scrollHeight}px`)
     }, [])
 
@@ -49,7 +49,7 @@ export default function AccordionToggle() {
                         <p>Ethereum</p>
                     </Link> 
                     <Link to='/components/OtherCurrency' className="link">
-                        <p>Other Currency</p>
+                        <p>Other Currencies</p>
                     </Link> 
                     
             

@@ -8,14 +8,8 @@ import AccordionToggle from './AccordionToggle';
 const Nav = () => {
     const img =  <img src={logo} alt="btc nav" className="logo" />
 
-    const [toggleMenu, setToggleMenu] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     
-  
-    const toggleNav = () => {
-      setToggleMenu(!toggleMenu)
-    }
-  
     useEffect(() => {
         
       const changeWidth = () => {
@@ -30,24 +24,13 @@ const Nav = () => {
   
     }, [])
 
-    const imgDisplay = (img) =>{
-        return(
-            <>
-                { (toggleMenu ) > false ?  !img  :  img } 
-             </>
-        )
-    }
-    
-
     return (  
-
-        
-        
+      
         <nav>   
            
-            <>{imgDisplay(img)}</>
+            <>{img}</>
                     
-                {(toggleMenu || screenWidth > 900) && (
+                {( screenWidth > 900) && (
                         <ul className="nav-links">
                             <Link to='/components/Main'>
                                 <li>Main</li>
@@ -59,19 +42,16 @@ const Nav = () => {
                                 <li>Ethereum</li>
                             </Link> 
                             <Link to='/components/OtherCurrency'>
-                                <li>Other Currency</li>
+                                <li>Other Currencies</li>
                             </Link> 
                             
                         </ul>
                 )}
 
 
-                <div id="toggle">
+            
                 <AccordionToggle  />
-                </div>
-               
-          
-
+             
        
         </nav>
     )

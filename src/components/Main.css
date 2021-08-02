@@ -19,6 +19,35 @@
     margin-left: 0em;
   }
   /* ------------------------------------- */
+  .back_background{
+    opacity: 0;
+    margin-top: 2em;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 40vh;
+    background-image: url(https://i.gifer.com/NTHO.gif);
+    background-position: center;
+    background-size: cover; */
+    transition: 5s;
+  }
+
+  .back_background-animated{
+    opacity:1 ;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 40vh;
+    /* background-image: url(./main.gif); */
+    background-image: url(./white-line.gif);
+    background-position: center;
+    background-size: cover;
+    transition: 4s;
+  }
+
+
+
 
   .presentation{
     display: grid;
@@ -28,10 +57,12 @@
     margin-right: auto;
     width: 50vw;
     height: 40vh;
-    background-image: url(./backGroundBtc.png);
+    background-image: url(./mainBtc.png);
     background-position: center;
     background-size: cover;
   }
+
+  
 
 /* --------------------------------------------- */
 

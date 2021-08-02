@@ -39,8 +39,6 @@ nav{
 }
 
 
-
-
   /* ----responsive------ */
 
   @media screen and (max-width:900px) {
@@ -52,20 +50,8 @@ nav{
     display: inline-flex;
   }
 
-  #toggle{
-    display: inline;
-    align-content: flex-end;
-    margin-bottom: 0.2em;
-    margin-top: 0.2em;
-   
-  }
-    
 
   }
-
-
-
-
 
 
  @media screen and (max-width:420px) {
@@ -77,76 +63,3 @@ nav{
 
 }
 
-
-
-
-
-
-
- /* @media screen and (max-width:900px) {
-
-  
-
-  .logo{
-    align-content: flex-start;
-    max-height: 2em;
-    display: inline-flex;
-  }
-
-  .btn{
-    display: inline;
-    position: absolute;
-    right: 1em;
-    top: 0.4em;
-    display: inline;
-    cursor: pointer;
-    
-  }
-
- 
-  
-
-  .line{
-    background: rgb(255, 199, 108);
-    width: 2em;
-    height: 0.3em;
-    margin: 0.3em;
-    border-radius: 10px;
-    
-  }
-
-
-  .nav-links { 
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 1em;
-    margin-top: 0.5em; 
-}
-
-
-  
-
-li:nth-child(1){
-    margin-bottom: 0em;
-    margin-top: 0em;
-    
-}
-
-li {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.555);
-    text-align: center;
-  
-    padding: 1em;
-    margin: 1em;
-    
-}
-
-
-
-
-}
-
-
-
- */
