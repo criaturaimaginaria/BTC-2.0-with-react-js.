@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/components/Main/static/css/main.b9f20db7.chunk.css",
-    "main.js": "/components/Main/static/js/main.fb1b04f3.chunk.js",
-    "main.js.map": "/components/Main/static/js/main.fb1b04f3.chunk.js.map",
-    "runtime-main.js": "/components/Main/static/js/runtime-main.736f3ca1.js",
-    "runtime-main.js.map": "/components/Main/static/js/runtime-main.736f3ca1.js.map",
-    "static/js/2.25d88544.chunk.js": "/components/Main/static/js/2.25d88544.chunk.js",
-    "static/js/2.25d88544.chunk.js.map": "/components/Main/static/js/2.25d88544.chunk.js.map",
-    "index.html": "/components/Main/index.html",
-    "static/css/main.b9f20db7.chunk.css.map": "/components/Main/static/css/main.b9f20db7.chunk.css.map",
-    "static/js/2.25d88544.chunk.js.LICENSE.txt": "/components/Main/static/js/2.25d88544.chunk.js.LICENSE.txt",
-    "static/media/btc.7e054916.png": "/components/Main/static/media/btc.7e054916.png",
-    "static/media/eth2.1fe07e19.png": "/components/Main/static/media/eth2.1fe07e19.png",
-    "static/media/Footer.css": "/components/Main/static/media/footerBtc.ff8b5ac8.png",
-    "static/media/logo.91508e83.png": "/components/Main/static/media/logo.91508e83.png",
-    "static/media/Main.css": "/components/Main/static/media/white-line.94e2f2ab.gif"
+    "main.css": "/BTC-2.0-with-react-js./components/Main/static/css/main.df8b50d6.chunk.css",
+    "main.js": "/BTC-2.0-with-react-js./components/Main/static/js/main.fb1b04f3.chunk.js",
+    "main.js.map": "/BTC-2.0-with-react-js./components/Main/static/js/main.fb1b04f3.chunk.js.map",
+    "runtime-main.js": "/BTC-2.0-with-react-js./components/Main/static/js/runtime-main.0e2d3e3a.js",
+    "runtime-main.js.map": "/BTC-2.0-with-react-js./components/Main/static/js/runtime-main.0e2d3e3a.js.map",
+    "static/js/2.25d88544.chunk.js": "/BTC-2.0-with-react-js./components/Main/static/js/2.25d88544.chunk.js",
+    "static/js/2.25d88544.chunk.js.map": "/BTC-2.0-with-react-js./components/Main/static/js/2.25d88544.chunk.js.map",
+    "index.html": "/BTC-2.0-with-react-js./components/Main/index.html",
+    "static/css/main.df8b50d6.chunk.css.map": "/BTC-2.0-with-react-js./components/Main/static/css/main.df8b50d6.chunk.css.map",
+    "static/js/2.25d88544.chunk.js.LICENSE.txt": "/BTC-2.0-with-react-js./components/Main/static/js/2.25d88544.chunk.js.LICENSE.txt",
+    "static/media/btc.7e054916.png": "/BTC-2.0-with-react-js./components/Main/static/media/btc.7e054916.png",
+    "static/media/eth2.1fe07e19.png": "/BTC-2.0-with-react-js./components/Main/static/media/eth2.1fe07e19.png",
+    "static/media/Footer.css": "/BTC-2.0-with-react-js./components/Main/static/media/footerBtc.ff8b5ac8.png",
+    "static/media/logo.91508e83.png": "/BTC-2.0-with-react-js./components/Main/static/media/logo.91508e83.png",
+    "static/media/Main.css": "/BTC-2.0-with-react-js./components/Main/static/media/white-line.94e2f2ab.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.736f3ca1.js",
+    "static/js/runtime-main.0e2d3e3a.js",
     "static/js/2.25d88544.chunk.js",
-    "static/css/main.b9f20db7.chunk.css",
+    "static/css/main.df8b50d6.chunk.css",
     "static/js/main.fb1b04f3.chunk.js"
   ]
 }
