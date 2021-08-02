@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+
 }
 
 
@@ -15,5 +16,7 @@ body{
   font-weight: 0;
   /* background-image: url(background3.jpg); */
   background-color: #1f1d23;
+  background-image: url(https://cdn.peraichi.com/userData/59f9649c-0548-4f1e-8571-2cf40a0000fe/img/5b0ff969345fd/original.jpg) ;
+  background-size: cover;
   
 }

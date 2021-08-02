@@ -1,41 +1,53 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap'); */
+
+
 .main{
   text-align: center;
     margin-top: 8vh;
     margin-left: 10vw;
     margin-right: 10vw;
     padding-bottom: 25vh;
+    
   }
 
   /* ----------------------------------- */
   .title{
-    color: #1f1d23;
-    transition:  4s ease-in-out;
-    margin-left: -4em;
+    font-family: 'Farsan', cursive;
+    color: #1f1d2300;
+    /* transition:  4s ease-in-out; */
+    margin-left: -6em;
+    font-weight:  300;
   }
 
   .animated-title{
+    font-family: 'Farsan', cursive;
+    font-weight:  300;
     color: rgb(200, 200, 200);
-    transition:  1.8s ;
+    transition:  2s  cubic-bezier(.47,1,.84,.96);
     margin-left: 0em;
   }
   /* ------------------------------------- */
   .back_background{
     opacity: 0;
+   overflow: hidden;
     /* transition: 5s; */
   }
 
   .back_background-animated{
-    
+  
     /* margin-top: 2em; */
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
-    height: 40vh;
-    background-image: url(./gold.png) ;
+    width: 60vw;
+    height: 45vh;
+    /* background-image: url(./gold.png) ; */
+    background-image: url(https://static.dw.com/image/56167112_303.jpg) ;
     background-position: center;
     background-size: cover;
-    transition: 2.5s;
+    transition: 3.5s;
     animation: ingot 5s infinite;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
   }
 
   /* @keyframes ingot {
@@ -59,11 +71,12 @@
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
-    height: 40vh;
+    width: 60vw;
+    height: 45vh;
     background-image: url(./mainBtc.png);
     background-position: center;
     background-size: cover;
+    
   }
 
   
@@ -71,25 +84,54 @@
 /* --------------------------------------------- */
 
 .window-one{
-  background-color: #1f1d23;
-
+  background-color: #1f1d2362;
 }
 
 .animated-window-one{
   background-color: #1f1d23;
-
 }
 
 .window-two{
-    background-color: #1f1d23;
+    background-color: #30264460;
     /* margin-top: 30em; */
     /* animation-timing-function: 3.4s cubic-bezier(.39,-0.1,.16,1.49); */
 }
 
 .animated-window-two{
-  background-color: #1f1d23;
+  background-color: #232636;
   margin-top: 30em;
   transition: 3s cubic-bezier(.41,.74,.56,.38);
-  
-
 }
+
+/* --------------------------------------------- */
+
+
+@media screen and (max-width:900px) {
+
+  .back_background-animated{
+    
+
+    width: 90vw;
+    height: 40vh;
+    background-image: url(./gold.png) ;
+    background-position: center;
+    background-size: cover;
+    transition: 2.5s;
+    animation: ingot 5s infinite;
+  }
+  .main{
+    font-size: 0.8em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+   
+  }
+  
+  .presentation{
+    width: 90vw;
+  }
+
+  
+}
+
+
+  
