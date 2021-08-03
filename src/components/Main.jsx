@@ -19,7 +19,7 @@ const Main = () => {
 
     return (
         <div className="main">
-            <h1 className={title ? "animated-title" : "title"}>Decentralized money Aa</h1>
+            <h1 className={title ? "animated-title" : "title"}>Decentralized money </h1>
 
             <div className={window ? "back_background-animated" : "back_background"}>
                 <div className="presentation">
