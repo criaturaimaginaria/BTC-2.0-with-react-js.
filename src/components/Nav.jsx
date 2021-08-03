@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import logo from '../logo.png';
+import logo from '../logo0.png';
 import {Link} from 'react-router-dom';
 import './Nav.css';
 import AccordionToggle from './AccordionToggle';
@@ -28,7 +28,8 @@ const Nav = () => {
       
         <nav>   
            
-            <>{img}</>
+            {/* <>{img}</> */}
+            <h1>BitGold</h1>
                     
                 {( screenWidth > 900) && (
                         <ul className="nav-links">

@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
 
 
 .main{
@@ -20,7 +21,7 @@
   }
 
   .animated-title{
-    font-family: 'Farsan', cursive;
+    font-family: 'Smythe', cursive;
     font-weight:  300;
     color: rgb(200, 200, 200);
     transition:  2s  cubic-bezier(.47,1,.84,.96);
@@ -41,7 +42,7 @@
     width: 60vw;
     height: 45vh;
     /* background-image: url(./gold.png) ; */
-    background-image: url(https://static.dw.com/image/56167112_303.jpg) ;
+    background-image: url(./coin.jpg) ;
     background-position: center;
     background-size: cover;
     transition: 3.5s;
@@ -109,21 +110,25 @@
 @media screen and (max-width:900px) {
 
   .back_background-animated{
-    
-
-    width: 90vw;
-    height: 40vh;
-    background-image: url(./gold.png) ;
+    background-image: url(./coin.jpg) ;
     background-position: center;
     background-size: cover;
+    width: 90vw;
+    height: 40vh;
     transition: 2.5s;
-    animation: ingot 5s infinite;
   }
+  .presentation{
+    width: 60vw;
+    height: 40vh;
+  }
+  .animated-window-two{
+    margin-top: 31.9em;
+  }
+
   .main{
     font-size: 0.8em;
     margin-left: 3vw;
     margin-right: 3vw;
-   
   }
   
   .presentation{

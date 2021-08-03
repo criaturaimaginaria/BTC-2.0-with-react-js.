@@ -12,7 +12,7 @@ const Main = () => {
 
         setTimeout(()=>{setTitle(true)}, 750);
         setTimeout(()=>{setWindow(true)}, 1400);
-        setTimeout(()=>{setMotionBack(true)}, 600);
+        setTimeout(()=>{setMotionBack(true)}, 550);
     }, [] )
 
     
