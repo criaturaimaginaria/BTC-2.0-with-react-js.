@@ -16,8 +16,7 @@
 }
 
 .logos{
-  /* float: left; */
-	width: 1.7em;
+	width: 1.8em;
 }
 
 
@@ -25,23 +24,23 @@
 
   table{
     border-collapse: collapse;
-    /* font-size: 20px; */
+
     font-size: 1.1em;
     font-weight: normal;
     background-color: #26262e;
     color: rgb(204, 204, 204);
     width: 70vw;
-    margin-left: 11vw;
-    margin-right: 11vw;
+    margin-left: 25%;
+    margin-right: 0vw;
     
   }
 
-  table thead tr{
+ table thead tr{
     background-color: #313136;
     color: #adadaf;
     text-align: left;
   }
-
+ 
   thead  th{
     padding: 1em;
  
@@ -51,8 +50,7 @@
     padding: 0.6em; 
   }
 
-  table tbody tr{
-    
+  table tbody tr{  
     border-bottom: 0.1px solid #8b8b8b69;
   }
 

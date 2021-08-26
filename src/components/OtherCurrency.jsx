@@ -49,6 +49,7 @@ function formatNumber(num) {
         )
     }
 
+
     return (
 
    
@@ -67,7 +68,9 @@ function formatNumber(num) {
                       </thead>
                       
                       <tbody>
+                          
                             { api.map(tableData)}    
+
                       </tbody>
 
 
