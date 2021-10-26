@@ -15,7 +15,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  min-width: 100vw;
+  min-width: 100%;
   background: rgb(255, 136, 0);
   color: white;
   text-decoration: none;
